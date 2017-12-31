@@ -1,0 +1,9 @@
+<h1>posts</h1>
+<a ui-sref="postsNew" class="btn btn-primary">New Post</a>
+<div class="row">
+  <div ng-repeat="post in postsIndex.all" class="col-md-6">
+    <a ui-sref="postsShow({ id: post.id })"><h2>{{post.heading }}</h2></a>
+
+
+  </div>
+</div>

@@ -1,0 +1,8 @@
+<h1> HEYY ARTIST!</h1>
+
+<div class="row">
+  <div ng-repeat="artist in artistsIndex.all" class="col-md-6">
+    <a ui-sref="artistsShow({ id: artist.id })"><h2>{{ artist.name }}</h2></a>
+
+  </div>
+</div>

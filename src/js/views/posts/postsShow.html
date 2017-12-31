@@ -1,0 +1,7 @@
+<h1>Posts SHOW here</h1>
+
+<h2>{{ postsShow.post.date }}</h2>
+<p><strong>{{ postsShow.post.heading }}</strong> <em>{{ postsShow.post.body }}</em></p>
+
+<a ui-sref="postsEdit({ id: postsShow.post.id })" class="btn btn-primary">Edit</a>
+<button ng-click="postsShow.delete()" class="btn btn-danger">Delete</button>
