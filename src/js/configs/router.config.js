@@ -81,6 +81,16 @@ function Router($stateProvider, $urlRouterProvider, $locationProvider) {
   url: '/artists/:id',
   templateUrl: '/js/views/artists/artistsShow.html',
   controller: 'ArtistsShowCtrl as artistsShow'
+})
+.state('artistsEdit', {
+  url: '/artists/:id/edit',
+  templateUrl: 'js/views/artists/artistsEdit.html',
+  controller: 'ArtistsEditCtrl as artistsEdit'
+})
+.state('artistsNew', {
+  url: '/artists/new',
+  templateUrl: 'js/views/artists/artistsNew.html',
+  controller: 'ArtistsNewCtrl as artistsNew'
 });
 
   $urlRouterProvider.otherwise('/');

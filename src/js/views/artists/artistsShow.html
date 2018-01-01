@@ -1,8 +1,8 @@
 <h1>artists SHOW here</h1>
-
+<a ui-sref="artistsNew" class="btn btn-primary">Create a new Artist</a>
 <h2>{{ artistsShow.artist.name }}</h2>
 <p><strong>{{ artistsShow.artist.statement }}</strong>
 <em>{{ artistsShow.artist.artwork }}</em></p>
 
-<a ui-sref="artistsEdit({ id: artistsShow.post.id })" class="btn btn-primary">Edit</a>
+<a ui-sref="artistsEdit({ id: artistsShow.artist.id })" class="btn btn-primary">Edit</a>
 <button ng-click="artistsShow.delete()" class="btn btn-danger">Delete</button>

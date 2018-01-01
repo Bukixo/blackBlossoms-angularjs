@@ -1,0 +1,18 @@
+<h1>Edit Artist</h1>
+
+<form ng-submit="artistsEdit.update()">
+  <div class="form-group">
+    <label for="date">date</label>
+    <input  name="date" id="date" ng-model="artistsEdit.artist.name" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="heading">heading</label>
+    <input type="text" name="heading" id="heading" ng-model="artistsEdit.artist.statement" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="body">Body</label>
+    <input type="text" name="body" id="body" ng-model="artistsEdit.artist.artwork" class="form-control">
+  </div>
+
+  <button class="btn btn-primary">Update</button>
+</form>
