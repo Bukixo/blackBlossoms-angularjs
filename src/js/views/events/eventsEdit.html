@@ -1,0 +1,22 @@
+<h1>events</h1>
+
+<form ng-submit="eventsEdit.update()">
+  <div class="form-group">
+    <label for="date">date</label>
+    <input  name="date" id="date" ng-model="eventsEdit.event.date" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="location">location</label>
+    <input  name="location" id="location" ng-model="eventsEdit.event.location" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="name">name</label>
+    <input type="text" name="name" id="name" ng-model="eventsEdit.event.name" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="body">Body</label>
+    <input type="text" name="body" id="body" ng-model="eventsEdit.event.body" class="form-control">
+  </div>
+
+  <button class="btn btn-primary">Update</button>
+</form>

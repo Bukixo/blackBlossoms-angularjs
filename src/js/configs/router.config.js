@@ -91,6 +91,29 @@ function Router($stateProvider, $urlRouterProvider, $locationProvider) {
   url: '/artists/new',
   templateUrl: 'js/views/artists/artistsNew.html',
   controller: 'ArtistsNewCtrl as artistsNew'
+})
+
+///////////================== EVENTS ==============================/////////
+
+.state('eventsIndex', {
+  url: '/events',
+  templateUrl: '/js/views/events/eventsIndex.html',
+  controller: 'EventsIndexCtrl as eventsIndex'
+})
+.state('eventsShow', {
+  url: '/events/:id',
+  templateUrl: '/js/views/events/eventsShow.html',
+  controller: 'EventsShowCtrl as eventsShow'
+})
+.state('eventsEdit', {
+  url: '/events/:id/edit',
+  templateUrl: 'js/views/events/eventsEdit.html',
+  controller: 'EventsEditCtrl as eventsEdit'
+})
+.state('eventsNew', {
+  url: '/events/new',
+  templateUrl: 'js/views/events/eventsNew.html',
+  controller: 'EventsNewCtrl as eventsNew'
 });
 
   $urlRouterProvider.otherwise('/');
