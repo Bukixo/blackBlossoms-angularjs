@@ -11,7 +11,7 @@ function Router($stateProvider, $urlRouterProvider, $locationProvider) {
         url: '/',
         templateUrl: '/js/views/home.html'
       })
-    
+
         .state('about', {
           url: '/about',
           templateUrl: '/js/views/about.html'
@@ -19,7 +19,7 @@ function Router($stateProvider, $urlRouterProvider, $locationProvider) {
         .state('login', {
           url: '/login',
           templateUrl: '/js/views/login.html',
-          controller: 'LoginCtrl as login'
+          controller: 'AuthCtrl as auth'
         })
 ////======================= USERS ==================================///////
 

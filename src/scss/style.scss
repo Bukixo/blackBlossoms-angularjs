@@ -1,4 +1,30 @@
-// Import all of your scss files here
+@import "variables";
+@import "mixins";
+@import 'footer';
+@import 'auth';
+@import 'user_header';
+@import 'type_index';
+@import "nav";
+
 body {
-  background-color: light-grey;
+@include masonry;
+padding-bottom: 60px;
+}
+
+div {
+  // border: 1px solid black;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.artwork {
+  width: 550px;
+  height: auto !important;
+  padding: 3px;
 }

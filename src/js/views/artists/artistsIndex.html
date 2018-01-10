@@ -1,8 +1,11 @@
-<h1> HEYY ARTIST!</h1>
+
+<a ui-sref="artistsNew" class="btn btn-primary">Create a new Artist</a>
 
 <div class="row">
-  <div ng-repeat="artist in artistsIndex.all" class="col-md-6">
-    <a ui-sref="artistsShow({ id: artist.id })"><h2>{{ artist.name }}</h2></a>
-
+  <div class="col-md-12 col-xs-12">
+        <div class="masonry-container">
+          <div ng-repeat="artist in artistsIndex.all" class="masonry">
+            <a ui-sref="artistsShow({ id: artist.id })"><img ng-src="{{ artist.image_src }}"></a>
+          </div>
+        </div>
   </div>
-</div>
