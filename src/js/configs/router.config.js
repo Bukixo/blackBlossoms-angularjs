@@ -11,16 +11,19 @@ function Router($stateProvider, $urlRouterProvider, $locationProvider) {
         url: '/',
         templateUrl: '/js/views/home.html'
       })
-
-        .state('about', {
-          url: '/about',
-          templateUrl: '/js/views/about.html'
-        })
-        .state('login', {
-          url: '/login',
-          templateUrl: '/js/views/login.html',
-          controller: 'AuthCtrl as auth'
-        })
+      .state('press', {
+        url: '/press',
+        templateUrl: '/js/views/press.html'
+      })
+      .state('about', {
+        url: '/about',
+        templateUrl: '/js/views/about.html'
+      })
+      .state('login', {
+        url: '/login',
+        templateUrl: '/js/views/login.html',
+        controller: 'AuthCtrl as auth'
+      })
 ////======================= USERS ==================================///////
 
         .state('usersIndex', {
