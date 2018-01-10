@@ -1,5 +1,6 @@
 <h1>artists SHOW here</h1>
 <a ui-sref="artistsNew" class="btn btn-primary">Create a new Artist</a>
+<img ng-src="{{ artistsShow.artist.image_src }}">
 <h2>{{ artistsShow.artist.name }}</h2>
 <p><strong>{{ artistsShow.artist.statement }}</strong>
 <em>{{ artistsShow.artist.artwork }}</em></p>

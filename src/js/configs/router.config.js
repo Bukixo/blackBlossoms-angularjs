@@ -11,15 +11,7 @@ function Router($stateProvider, $urlRouterProvider, $locationProvider) {
         url: '/',
         templateUrl: '/js/views/home.html'
       })
-        .state('artists', {
-          url: '/artists',
-          templateUrl: '/js/views/artists.html'
-        })
-        .state('events', {
-          url: '/events',
-          templateUrl: '/js/views/events.html'
-        })
-
+    
         .state('about', {
           url: '/about',
           templateUrl: '/js/views/about.html'

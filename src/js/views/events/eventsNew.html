@@ -3,19 +3,19 @@
 <form ng-submit="eventsNew.create()">
   <div class="form-group">
     <label for="date">date (yyyy-mm-dd)</label>
-    <input  name="date" id="date" ng-model="eventsNew.event.date" class="form-control">
+    <input placeholder="yyyy-MM-dd" name="date" id="date" ng-model="eventsNew.event.date" class="form-control">
   </div>
   <div class="form-group">
     <label for="location">location</label>
-    <input  name="location" id="location" ng-model="eventsNew.event.location" class="form-control">
+    <input name="location" required id="location" ng-model="eventsNew.event.location" class="form-control">
   </div>
   <div class="form-group">
     <label for="name">name</label>
-    <input type="text" name="name" id="name" ng-model="eventsNew.event.name" class="form-control">
+    <input type="text" required name="name" id="name" ng-model="eventsNew.event.name" class="form-control">
   </div>
   <div class="form-group">
     <label for="body">Body</label>
-    <input type="text" name="body" id="body" ng-model="eventsNew.event.body" class="form-control">
+    <input type="text" required name="body" id="body" ng-model="eventsNew.event.body" class="form-control">
   </div>
 
   <button class="btn btn-primary">Update</button>
