@@ -2,6 +2,8 @@
 <html ng-app="bb">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
     <title>BlackBlossoms</title>
     <!-- inject:js -->
     <!-- endinject -->
@@ -15,13 +17,13 @@
       <a ui-sref="artistsIndex">Artists</a>
       <a ui-sref="press">Press</a>
       <a ui-sref="about">About</a>
-
-      <a ui-sref="login">login</a>
+      <!-- <a ui-sref="login">login</a>
       <a ui-sref="usersIndex">user</a>
-      <li ng-if="main.isAuthenticated()"><a ng-click="main.logout()" href="#">Logout</a></li>
+      <li ng-if="main.isAuthenticated()"><a ng-click="main.logout()" href="#">Logout</a></li> -->
     </nav>
     <main ui-view></main>
-    <footer>Footer information</footer>
+    <footer><a href="https://twitter.com/blackblossomss?lang=en"><img src="../images/twitter.png" class="ft"></a> <a href="https://www.instagram.com/blackblossomss/"><img src="../images/ig.jpg" class="ft"></a> a<a href="mailto:blackblossoms@gmail.com" target="_top"> <img src="../images/icon_email.png" class="ft"></a>blackblossoms &copy; 2018 All rights Reserved
+</footer>
   </body>
 
 
