@@ -2,16 +2,13 @@
 <div class="row">
   <div class="col-md-8 col-xs-12 col-centered">
     <div class="col-md-12 col-xs-12 col-centered">
-      <h2>{{ artistsShow.artist.name }}</h2>
+      <h1><strong>{{ artistsShow.artist.name }}</strong></h1>
     </div>
     <div class="col-md-12 col-xs-12 col-centered">
       <img class="artwork" ng-src="{{ artistsShow.artist.image_src }}">
     </div>
     <div class="col-md-12 col-xs-12 col-centered" >
-      <p><strong>{{ artistsShow.artist.statement }}</strong>
+      <p>{{ artistsShow.artist.statement }}</p>
     </div>
   </div>
 </div>
-
-<a ui-sref="artistsEdit({ id: artistsShow.artist.id })" class="btn btn-primary">Edit</a>
-<button ng-click="artistsShow.delete()" class="btn btn-danger">Delete</button>
