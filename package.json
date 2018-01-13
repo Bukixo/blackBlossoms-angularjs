@@ -4,7 +4,7 @@
   "description": "A example stack with gulp and angular",
   "main": "index.js",
   "scripts": {
-    "postinstall": "bower install && gulp deploy"
+     "postinstall": "./node_modules/bower/bin/bower install"
   },
   "author": "Alex Chin <alex@alexchin.co.uk>",
   "license": "ISC",
@@ -51,7 +51,8 @@
   },
   "dependencies": {
     "bootstrap": "4.0.0-beta.3",
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "bower": "~1.8.2"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
@@ -87,4 +88,5 @@
     "main-bower-files": "^2.13.1",
     "require-dir": "^0.3.1"
   }
+
 }
